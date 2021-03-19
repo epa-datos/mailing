@@ -48,7 +48,7 @@ Single emails have three input values:
 
 ### Mailgun specific implementation
 ```golang
-	mailService := mailgun.New()
+	mailService := mailgunService.New()
 ```
 **Note:** You need to set the EMAIL_DOMAIN and EMAIL_API_KEY as environment variables
 
