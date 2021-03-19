@@ -28,10 +28,11 @@ Single emails have three input values:
 **Headers**
 ```golang
   headers := &mailing.Headers{
-	  Sender:    "test@epa.ditigal",
-		Recipient: "recipient@test.com",
-		Subject:   "test",
-		ContentType: "text/html",           //This value is optional
+  	Sender:    "test@epa.com",
+	Recipient: "recipient@test.com",
+	Subject:   "test",
+	ContentType: "text/html",           //This value is optional
+   }	
 ```
 **Template**
 ```golang
