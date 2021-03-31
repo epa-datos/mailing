@@ -6,6 +6,7 @@ type Template string
 
 const (
 	PasswordRecovery = Template("password_recovery.html")
+	UserInvitation   = Template("invitation.html")
 	TestTemplate     = Template("test_template.html")
 )
 
