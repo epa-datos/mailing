@@ -21,7 +21,7 @@ func New() *mailgunService {
 }
 
 func (m *mailgunService) SendSingleEmail(headers *mailing.Headers, template mailing.Template, params map[string]interface{}) error {
-	emailBody, err := mailing.ParseTemplate(template.GetPath(), params)
+	emailBody, err := mailing.ParseMailTemplate(template, params)
 	if err != nil {
 		return err
 	}
