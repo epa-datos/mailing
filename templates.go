@@ -1,15 +1,25 @@
 package mailing
 
-import "os"
+import "github.com/epa-datos/mailing/templates"
 
-type Template string
+type baseTemplate string
+
+type Template interface {
+	String() string
+}
 
 const (
-	PasswordRecovery = Template("password_recovery.html")
-	UserInvitation   = Template("invitation.html")
-	TestTemplate     = Template("test_template.html")
+	PasswordRecovery = baseTemplate("password_recovery.html")
+	UserInvitation   = baseTemplate("invitation.html")
+	TestTemplate     = baseTemplate("test_template.html")
 )
 
-func (t Template) GetPath() string {
-	return os.Getenv("GOPATH") + "/src/github.com/epa-datos/mailing/templates/" + string(t)
+var baseTemplates = map[Template]string{
+	TestTemplate:     templates.TestTemplate,
+	UserInvitation:   templates.UserInvitation,
+	PasswordRecovery: templates.PasswordRecovery,
+}
+
+func (t baseTemplate) String() string {
+	return baseTemplates[t]
 }
