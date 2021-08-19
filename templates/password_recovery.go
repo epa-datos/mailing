@@ -231,21 +231,6 @@ const PasswordRecovery = `<!DOCTYPE html>
                                     padding: 0;
                                     text-align: left;
                                   ">
-                                <center data-parsed="" style="min-width: 48px; width: 100%;">
-                                  <img src="./assets/Logo_HP_PNG.png" sv alt="" align="center" class="float-center" style="
-                                        -ms-interpolation-mode: bicubic;
-                                        margin: 0 auto;
-                                        clear: both;
-                                        display: block;
-                                        float: none;
-                                        margin: 0 auto;
-                                        max-width: 100%;
-                                        outline: 0;
-                                        text-align: center;
-                                        text-decoration: none;
-                                        width: 48px;
-                                      " />
-                                </center>
                               </th>
                             </tr>
                           </table>
