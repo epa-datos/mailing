@@ -233,23 +233,6 @@ const UserInvitation = `<!DOCTYPE html>
 																		padding: 0;
 																		text-align: left;
 																	">
-																<center data-parsed=""
-																	style="min-width: 242px; width: 100%;">
-																	<img src="./assets/logo.svg" alt="" align="center"
-																		class="float-center" style="
-																				-ms-interpolation-mode: bicubic;
-																				margin: 0 auto;
-																				clear: both;
-																				display: block;
-																				float: none;
-																				margin: 0 auto;
-																				max-width: 100%;
-																				outline: 0;
-																				text-align: center;
-																				text-decoration: none;
-																				width: 242px;
-																			" />
-																</center>
 															</th>
 														</tr>
 													</table>
@@ -424,7 +407,7 @@ const UserInvitation = `<!DOCTYPE html>
 																			padding: 0;
 																			text-align: center;
                                                                         ">
-                                                                    Has recibido una invitación para formar parte del Programa HP COOP.
+																	Has recibido una invitacion para formar parte de la Web del Programa HP CO-OP
 																	
                                                                 </p>
                                                                 <p class="text-center" style="
